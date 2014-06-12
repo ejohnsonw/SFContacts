@@ -1,0 +1,22 @@
+<html>
+<body>
+<H1>HELLO</H1>
+<script>
+
+if (window.location.hash) {
+	//alert(window.location);
+    var message = decodeURIComponent(window.location.hash.substr(1)),
+        params = message.split('&'),
+        response = {};
+    params.forEach(function (param) {
+        var splitter = param.split('=');
+        response[splitter[0]] = splitter[1];
+        console.log(splitter[0]+"=",splitter[1]);
+    });
+    window.opener.handleOpenURL(window.location.toString());
+    window.close();
+}
+
+</script>
+</body>
+</html>

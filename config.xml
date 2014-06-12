@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+ Copyright (c) 2014 NgeosOne LLC. All rights reserved.
+ Created by Evol Johnson
+ 
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+[GENERATRON]
+Filename:     config.xml
+Description:  Packaging Information
+Project:      SFContacts
+
+This file was generated from: ionic/config.xml.vmg
+DO NOT MODIFY, THIS FILE WILL BE OVERWRITTEN. Please use extend this class.
+-->
+<widget id="com.ionicframework.SFContacts" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>SFContacts</name>
+    <description>
+        An Ionic Framework and Cordova project.
+    </description>
+    <author email="ejohnson@ngeosone.com" href="http://www.ngeosone.com/">
+      The Generatron
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+
+    <!-- Don't store local date in an iCloud backup. Turn this to "cloud" to enable storage 
+         to be sent to iCloud. Note: enabling this could result in Apple rejecting your app.
+    -->
+    <preference name="BackupWebStorage" value="none" />
+
+    <feature name="StatusBar">
+      <param name="ios-package" value="CDVStatusBar" onload="true" />
+    </feature>
+    <gap:plugin name="nl.x-services.plugins.launchmyapp">
+  <param name="URL_SCHEME" value="mycoolapp" />
+</gap:plugin>
+</widget>
